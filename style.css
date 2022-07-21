@@ -1,0 +1,85 @@
+.signUp{
+    text-align:center;
+    margin:auto;
+    width: fit-content;
+}
+
+header{
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.field{
+    width:200px;
+    height: 35px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-color: 20px;
+}
+
+terms{
+    margin-top: 10px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.agreement{
+    font-size: 15px;
+    position:relative;
+    right: 200px;
+}
+
+.statement{
+    position:relative;
+    bottom: 20px;
+    left: 60px;
+    font-size: 15px;
+}
+
+.terms{
+    float:left;
+    font-size: 10px;
+    margin-right: 5px;
+
+}
+
+#reg{
+    background-color: blue;
+    color:white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+input:hover{
+    border: 1px solid paleturquoise;
+}
+
+.form_button{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.btn{
+   
+    width:50%;
+    height: 35px;
+    border-radius: 5px;
+    color:white;
+    font-size: 18px;
+}
+
+.register-btn{
+    background-color: #0091ff;
+}
+
+.signIn-btn{
+    background-color: #2DF0AF;
+}
+
+
