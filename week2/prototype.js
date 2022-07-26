@@ -16,7 +16,7 @@ Array.prototype.myFilter = function(cb){
     let filterArr = [];
     for (let i =0; i < this.length;i++){
         if(cb(this[i],i,this)){
-            filterArr =[...filterArr,this[i]];
+            filterArr =[...filterArr,this[i]]; 
         }
     }
     return filterArr;
@@ -31,28 +31,22 @@ Array.prototype.myReduce = function(cb, initial_value){
     res = initialValue;
   }
 
-  for(let i = 0; i< this.length;i++){
-    cb(res+=this[i);
+  for(let i = 0; i < this.length;i++){
+    res = cb(this[i],i,this);
   }
   return res;
 }
 
 //--------- Implementing---------------
 
-const arrMap = arr.myMap((e)=>{
-    return e;
-});
+const arrMap = arr.myMap((e)=> e);
 console.log(arrMap);
 
-const arrFilter =arr.myFilter((e)=>{
-    if(e >= 2) return e;
-});
+const arrFilter =arr.myFilter((e)=> e < 2);
 console.log(arrFilter);
   
 
-const arrReduce = arr.myReduce((prev,curr)=>{
-    return prev + curr;
-},0);
+const arrReduce = arr.myReduce((prev,curr)=> prev + curr);
 
 console.log(arrReduce);
 
