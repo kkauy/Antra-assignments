@@ -54,4 +54,6 @@ const arrReduce = arr.myReduce((prev,curr)=>{
     return prev + curr;
 },0);
 
+console.log(arrReduce);
+
 
