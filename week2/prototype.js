@@ -25,14 +25,14 @@ Array.prototype.myFilter = function(cb){
 //----------------------
 
 // Reduce
-Array.prototype.myReduce = function(callback, initial_value){
+Array.prototype.myReduce = function(cb, initial_value){
   let res = 0;
   if (initial_value){
     res = initialValue;
   }
 
   for(let i = 0; i< this.length;i++){
-    cb(this[i]+ res);
+    cb(res+=this[i);
   }
   return res;
 }
